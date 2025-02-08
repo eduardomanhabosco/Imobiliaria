@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-hotel" id="nav_logo"> Luan Leummann</i>
+            <ul id="nav_list">
+                <li class="nav_item active"><a href="#home">Início</a></li>
+                <li class="nav_item"><a href="#disponiveis">Disponiveis</a></li>
+                <li class="nav_item"><a href="#clientes">Clientes</a></li>
+            </ul>
+            <button class="btn_default">Me interessei</button>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <div class="tituloEdescricao">
+                    <h1 class="titulo">A <span>MORADIA</span> DA SUA <span>FAMÍLIA</span> ESTÁ <span>AQUI</span></h1>
+                    <p class="descricao">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores provident optio et qui
+                        adipisci, cupiditate asperiores neque eveniet animi. Quia nesciunt necessitatibus nulla voluptas
+                        porro officia corrupti eaque at.
+                    </p>
+                </div>
+                <div class="ctaButtonsEsociais">
+                    <div id="cta_buttons">
+                        <a href="#" class="btn_default">Lorem ipsum</a>
+                        <a href="tel:+55555555555" id="phone_button">
+                            <button class="btn_default">
+                                <i class="fa-solid fa-phone"></i> 55 9 9193-7022
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/images/dicaprios.png" alt="">
+            </div>
+        </section>
+
+        <section id="disponiveis">
+            <h2 class="section-title">Imoveis Disponíveis</h2>
+            <div id="todos_imoveis">
+                <div class="imoveis">
+                    <div class="imovel">
+                        <img src="src/images/edificio1.jpg" class="imovel_imagem">
+                        <div class="informacoes_imovel">
+                            <h3 class="imovel_titulo">AP MORUMBI</h3>
+                            <span class="imovel_descricao">
+                                Apartamento de alto padrão com 4 suítes amplas, todas com closet e varanda. Possui uma academia
+                                privativa com equipamentos modernos, piscina aquecida, sauna e salão de festas. Estacionamento
+                                para até 3 veículos. Segurança 24h com monitoramento por câmeras e portaria eletrônica. Localizado
+                                em uma área nobre com fácil acesso a escolas, supermercados e restaurantes renomados.
+                            </span>
+                            <div class="imovel_rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="imovel_preco">
+                                <h4>R$ 1.000.000,00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imovel">
+                        <img src="src/images/edificio2.jpg" class="imovel_imagem">
+                        <div class="informacoes_imovel">
+                            <h3 class="imovel_titulo">COPACABANA PALACE</h3>
+                            <span class="imovel_descricao">
+                                Cobertura de luxo com 3 suítes, vista panorâmica para o mar e área gourmet com churrasqueira e
+                                jacuzzi. Sala de estar ampla com iluminação natural, cozinha planejada com eletrodomésticos de
+                                última geração. Condomínio oferece academia, piscina, salão de festas e playground. Próximo a
+                                escolas renomadas, farmácias, restaurantes e transporte público.
+                            </span>
+                            <div class="imovel_rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="imovel_preco">
+                                <h4>R$ 1.500.000,00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imovel">
+                        <img src="src/images/edificio3.jpg" class="imovel_imagem">
+                        <div class="informacoes_imovel">
+                            <h3 class="imovel_titulo">HOTEL IJUI</h3>
+                            <span class="imovel_descricao">
+                                Imóvel moderno com 4 suítes, todas equipadas com ar-condicionado e vista para área verde. Área de lazer
+                                completa com piscina, quadra de tênis e espaço para churrasco. Inclui salão de jogos e academia equipada.
+                                Estacionamento amplo com vagas cobertas. Localizado próximo ao centro comercial, com acesso fácil a
+                                rodovias e serviços essenciais.
+                            </span>
+                            <div class="imovel_rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="imovel_preco">
+                                <h4>R$ 900.000,00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imovel">
+                        <img src="src/images/edificio4.jpg" class="imovel_imagem">
+                        <div class="informacoes_imovel">
+                            <h3 class="imovel_titulo">EDIFÍCIO GUANABARA</h3>
+                            <span class="imovel_descricao">
+                                Apartamento confortável com 3 dormitórios, sendo 1 suíte, sala de jantar e estar integradas, cozinha moderna
+                                e lavanderia. Condomínio conta com academia, salão de festas e brinquedoteca. Segurança 24 horas com
+                                portaria eletrônica. Fácil acesso ao centro da cidade e áreas de lazer.
+                            </span>
+                            <div class="imovel_rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="imovel_preco">
+                                <h4>R$ 800.000,00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clientes">
+            <div class="clientes_content">
+                <h2 class="section-title">O que nossos clientes falam</h2>
+                <h3 class="section-subtitle">Depoimentos de quem já vive a experiência</h3>
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <div class="feedback-content">
+                            <div class="feedback-header">
+                                <span class="feedback-name">Ana Paula</span>
+                                <div class="feedback-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="feedback-comment">"Excelente serviço e atendimento excepcional. Recomendo!"</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="feedback-content">
+                            <div class="feedback-header">
+                                <span class="feedback-name">Carlos Eduardo</span>
+                                <div class="feedback-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="feedback-comment">"Ótima experiência, mas poderia ter mais opções."</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="feedback-content">
+                            <div class="feedback-header">
+                                <span class="feedback-name">Mariana Silva</span>
+                                <div class="feedback-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="feedback-comment">"Bom, mas senti falta de algo mais personalizado."</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="feedback-content">
+                            <div class="feedback-header">
+                                <span class="feedback-name">Roberto Gomes</span>
+                                <div class="feedback-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="feedback-comment">"Impressionado com a qualidade e rapidez no atendimento!"</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <div class="feedback-content">
+                            <div class="feedback-header">
+                                <span class="feedback-name">Beatriz Costa</span>
+                                <div class="feedback-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="feedback-comment">"Muito satisfeita, atendimento acima do esperado."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts/script.js"></script>
+</body>
+
+</html>
