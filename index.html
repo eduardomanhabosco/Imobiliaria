@@ -150,91 +150,22 @@
 
         <section id="clientes">
             <div class="clientes_content">
-                <h2 class="section-title">O que nossos clientes falam</h2>
-                <h3 class="section-subtitle">Depoimentos de quem já vive a experiência</h3>
-                <div id="feedbacks">
-                    <div class="feedback">
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">Ana Paula</span>
-                                <div class="feedback-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                            <p class="feedback-comment">"Excelente serviço e atendimento excepcional. Recomendo!"</p>
-                        </div>
+              <h2 class="section-title">O que nossos clientes falam</h2>
+              <h3 class="section-subtitle">Depoimentos de quem já vive a experiência</h3>
+              <template id="feedback-template">
+                <div class="feedback">
+                  <div class="feedback-content">
+                    <div class="feedback-header">
+                      <span class="feedback-name"></span>
+                      <div class="feedback-rating"></div>
                     </div>
-
-                    <div class="feedback">
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">Carlos Eduardo</span>
-                                <div class="feedback-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                            <p class="feedback-comment">"Ótima experiência, mas poderia ter mais opções."</p>
-                        </div>
-                    </div>
-
-                    <div class="feedback">
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">Mariana Silva</span>
-                                <div class="feedback-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                            <p class="feedback-comment">"Bom, mas senti falta de algo mais personalizado."</p>
-                        </div>
-                    </div>
-
-                    <div class="feedback">
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">Roberto Gomes</span>
-                                <div class="feedback-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                            <p class="feedback-comment">"Impressionado com a qualidade e rapidez no atendimento!"</p>
-                        </div>
-                    </div>
-
-                    <div class="feedback">
-                        <div class="feedback-content">
-                            <div class="feedback-header">
-                                <span class="feedback-name">Beatriz Costa</span>
-                                <div class="feedback-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                            <p class="feedback-comment">"Muito satisfeita, atendimento acima do esperado."</p>
-                        </div>
-                    </div>
+                    <p class="feedback-comment"></p>
+                  </div>
                 </div>
+              </template>
+              <div id="feedbacks"></div>
             </div>
-        </section>
+          </section>
     </main>
 
     <script src="src/scripts/script.js"></script>

@@ -50,3 +50,29 @@ $(document).ready(function() {
     })
     
 });
+
+const feedbacksData = [
+    { name: "Lucas Almeida", rating: 5, comment: "Atendimento impecável e serviço de altíssimo nível. Voltarei com certeza!" },
+    { name: "Juliana Rocha", rating: 3, comment: "Foi uma boa experiência, mas alguns detalhes poderiam ser melhores." },
+    { name: "Felipe Mendes", rating: 4, comment: "Gostei bastante, só acho que poderiam investir mais em personalização." },
+    { name: "Renata Oliveira", rating: 5, comment: "Serviço excelente e atendimento super rápido. Amei!" },
+    { name: "Thiago Fernandes", rating: 4, comment: "Fiquei bem satisfeito, mas sempre dá pra melhorar um pouco." }
+];
+
+const feedbackContainer = document.getElementById("feedbacks");
+const template = document.getElementById("feedback-template");
+
+feedbacksData.forEach(({ name, rating, comment }) => {
+    const clone = template.content.cloneNode(true);
+    clone.querySelector(".feedback-name").textContent = name;
+    clone.querySelector(".feedback-comment").textContent = comment;
+    
+    const ratingContainer = clone.querySelector(".feedback-rating");
+    for (let i = 0; i < 5; i++) {
+        const star = document.createElement("i");
+        star.className = i < rating ? "fa-solid fa-star" : "fa-regular fa-star";
+        ratingContainer.appendChild(star);
+    }
+    
+    feedbackContainer.appendChild(clone);
+});
